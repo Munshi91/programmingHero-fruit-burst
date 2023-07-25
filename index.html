@@ -42,9 +42,79 @@
     <!-----------------------------------
          daisyUI & Tailwind css CDN End
       ----------------------------------->
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-  
+  <bod class="font-lato">
+    
+    <header class="max-w-6xl mx-auto">
+<!-----------------------------------
+        Navbar Section Start
+      ----------------------------------->
+      <div
+        class="flex justify-between my-10 bg-[#F85559] h-28 items-center px-10 rounded-full text-white"
+      >
+        <div class="block">
+          <ul class="flex space-x-4 font-bold text-lg">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="h-14 w-12">
+            <img src="./images/logo.png" alt="" />
+          </div>
+          <div class="text-4xl font-extrabold">
+            <h2>Fruit Burst</h2>
+          </div>
+        </div>
+        <div class="">
+          <span>
+            <input class="w-72 h-12 relative rounded-full px-5 py-5"  type="text" placeholder="Search here">
+            <i class="fa fa-search absolute -ml-7 my-[16px]   text-black"></i>
+          </span>
+        </div>
+      </div>
+      <!-----------------------------------
+        Navbar Section End
+      ----------------------------------->
+      <!-----------------------------------
+        Banner  Section Start
+      ----------------------------------->
+      <section>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/banner1.png" class="w-full" />   
+            <div
+            class="absolute inset-x-[10%] bottom-48 text-center text-white md:block">
+              <h5 class="text-6xl">Exotic tastes at your <br> doorstep</h5>
+            <p class="mt-5">
+              We supply highly quality organic products
+            </p>
+            <button class="btn btn-primary bg-clifford border-none hover:bg-clifford mt-5">Shop Now</button>
+          </div>
+
+            
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#" class="btn btn-circle  bg-black border-none text-white">❮</a> 
+              <a href="#" class="btn btn-circle bg-black border-none text-white">❯</a>
+            </div>
+          </div> 
+        </div>
+
+       
+      </section>
+      <!-----------------------------------
+        Banner  Section End
+      ----------------------------------->
+    </header>
+    <main></main>
+    <footer></footer>
     <!-----------------------------------
        Tailwind Css Customizing Section
       ----------------------------------->
@@ -52,8 +122,12 @@
       tailwind.config = {
         theme: {
           extend: {
+            backgroundImage: {
+                 'hero-pattern': "url('./images/banner1.png')",},
             colors: {
-              clifford: "#da373d",
+              clifford: "#F85559",
+              'bg-start': "#121212",
+              'bg-end': "#12121200",
             },
           },
         },
