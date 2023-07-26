@@ -1,137 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit Burst</title>
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
-    <!------------------------
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fruit Burst</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+  <!------------------------
        google Font CDN add
       ----------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!------------------------
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <!------------------------
        google Font CDN End
       ----------------------->
-    <!------------------------
+  <!------------------------
          font-awesome CDN Start
       ----------------------->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!------------------------
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!------------------------
          font-awesome CDN End
       ----------------------->
-    <!-----------------------------------
+  <!-----------------------------------
          daisyUI & Tailwind css CDN Start
       ----------------------------------->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-----------------------------------
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-----------------------------------
          daisyUI & Tailwind css CDN End
       ----------------------------------->
-    <style>
-      .font-lato {
-        font-family: "Lato", sans-serif;
-      }
-    </style>
-  </head>
-  <bod class="font-lato">
-    
-    <header class="max-w-6xl mx-auto">
-<!-----------------------------------
+  <style>
+    .font-lato {
+      font-family: "Lato", sans-serif;
+    }
+  </style>
+</head>
+<bod class="font-lato">
+
+  <header class="max-w-6xl mx-auto">
+    <!-----------------------------------
         Navbar Section Start
       ----------------------------------->
-      <div
-        class="flex justify-between my-10 bg-[#F85559] h-28 items-center px-10 rounded-full text-white"
-      >
-        <div class="block">
-          <ul class="flex space-x-4 font-bold text-lg">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">All Fruits</a></li>
-          </ul>
+    <div class="flex justify-between my-10 bg-[#F85559] h-28 items-center px-10 rounded-full text-white">
+      <div class="block">
+        <ul class="flex space-x-4 font-bold text-lg">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">All Fruits</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="h-14 w-12">
+          <img src="./images/logo.png" alt="" />
         </div>
-        <div class="flex items-center gap-4">
-          <div class="h-14 w-12">
-            <img src="./images/logo.png" alt="" />
-          </div>
-          <div class="text-4xl font-extrabold">
-            <h2>Fruit Burst</h2>
-          </div>
-        </div>
-        <div class="">
-          <span>
-            <input class="w-72 h-12 relative rounded-full px-5 py-5"  type="text" placeholder="Search here">
-            <i class="fa fa-search absolute -ml-7 my-[16px]   text-black"></i>
-          </span>
+        <div class="text-4xl font-extrabold">
+          <h2>Fruit Burst</h2>
         </div>
       </div>
-      <!-----------------------------------
+      <div class="">
+        <span>
+          <input class="w-72 h-12 relative rounded-full px-5 py-5" type="text" placeholder="Search here">
+          <i class="fa fa-search absolute -ml-7 my-[16px]   text-black"></i>
+        </span>
+      </div>
+    </div>
+    <!-----------------------------------
         Navbar Section End
       ----------------------------------->
-      <!-----------------------------------
+    <!-----------------------------------
         Banner  Section Start
       ----------------------------------->
-      <section>
-        <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="./images/banner1.png" class="w-full" />   
-            <div
-            class="absolute inset-x-[10%] bottom-48 text-center text-white md:block">
-              <h5 class="text-6xl">Exotic tastes at your <br> doorstep</h5>
+    <section>
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/banner1.png" class="w-full" />
+          <div class="absolute inset-x-[10%] bottom-48 text-center text-white md:block">
+            <h5 class="text-6xl">Exotic tastes at your <br> doorstep</h5>
             <p class="mt-5">
               We supply highly quality organic products
             </p>
             <button class="btn btn-primary bg-clifford border-none hover:bg-clifford mt-5">Shop Now</button>
           </div>
 
-            
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#" class="btn btn-circle  bg-black border-none text-white">❮</a> 
-              <a href="#" class="btn btn-circle bg-black border-none text-white">❯</a>
-            </div>
-          </div> 
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#" class="btn btn-circle  bg-black border-none text-white">❮</a>
+            <a href="#" class="btn btn-circle bg-black border-none text-white">❯</a>
+          </div>
         </div>
-      </section>
-      <!-----------------------------------
+      </div>
+    </section>
+    <!-----------------------------------
         Banner  Section End
       ----------------------------------->
-
-      
-    </header>
-    <main></main>
-    <footer></footer>
     <!-----------------------------------
+        Small Banner  Section Start
+      ----------------------------------->
+    <section class="relative -top-20">
+      <div
+        class="grid grid-cols-1 md:grid-cols-5 items-center bg-white max-w-5xl mx-auto justify-center text-center px-4 py-6 rounded-lg drop-shadow-xl">
+        <div>
+          <img class="ml-7" src="./images/fruit1.png" alt="">
+          <h4 class="font-bold text-lg ">Strawberry</h4>
+        </div>
+        <div>
+          <img class="ml-10" src="./images/fruit2.png" alt="">
+          <h4 class="font-bold text-lg ">Orange</h4>
+        </div>
+        <div>
+          <img class="ml-5" src="./images/fruit3.png" alt="">
+          <h4 class="font-bold text-lg ">Mango</h4>
+        </div>
+        <div>
+          <img class="ml-3" src="./images/fruit4.png" alt="">
+          <h4 class="font-bold text-lg ">Strawberry</h4>
+        </div>
+        <div>
+          <img class="ml-5" src="./images/fruit5.png" alt="">
+          <h4 class="font-bold text-lg ">Mango</h4>
+        </div>
+      </div>
+    </section>
+    <!-----------------------------------
+        Small Banner  Section End
+      ----------------------------------->
+  </header>
+  <main></main>
+  <footer></footer>
+  <!-----------------------------------
        Tailwind Css Customizing Section
       ----------------------------------->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            backgroundImage: {
-                 'hero-pattern': "url('./images/banner1.png')",},
-            colors: {
-              clifford: "#F85559",
-              'bg-start': "#121212",
-              'bg-end': "#12121200",
-            },
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'hero-pattern': "url('./images/banner1.png')",
+          },
+          colors: {
+            clifford: "#F85559",
+            'bg-start': "#121212",
+            'bg-end': "#12121200",
           },
         },
-      };
-    </script>
+      },
+    };
+  </script>
   </body>
+
 </html>
