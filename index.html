@@ -68,6 +68,36 @@
         </span>
       </div>
     </div>
+    <div class="flex justify-between my-5 items-center px-5 rounded-full md:hidden">
+      <div class="flex items-center gap-2">
+        <div class="w-8">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="text-2xl font-extrabold">
+          <h2 class="text-black">Fruit Burst</h2>
+        </div>
+      </div>
+      <div class="block">
+        <div class="navbar-start">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                class="inline-block w-5 h-5 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </label>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1]  p-3 shadow bg-base-100 rounded-box w-52 cursor-pointer">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-----------------------------------
         Navbar Section End
       ----------------------------------->
@@ -135,7 +165,7 @@
     <!-----------------------------------
         Small Banner  Section Start
       ----------------------------------->
-    <section class="relative  md:-top-20">
+    <section class="relative px-5 md:-top-20">
       <div
         class="grid grid-cols-1 md:grid-cols-5 items-center bg-white max-w-5xl mx-auto text-center justify-items-center px-4 py-6 rounded-lg drop-shadow-xl">
         <div>
@@ -168,7 +198,7 @@
     <!-----------------------------------
             Deal of Day Section Start
           ----------------------------------->
-    <section class="py-14">
+    <section class="py-10">
       <div class="flex-col md:flex-row px-5 py-5 flex justify-between md:pb-8 items-center">
         <div class="flex-1">
           <h1 class="text-2xl text-center md:text-left py-5 md:text-4xl font-extrabold md:py-4">Deal of the day</h1>
@@ -232,11 +262,12 @@
           </span>
           <button class="btn bg-transparent border-none hover:bg-transparent text-[#F85559] capitalize"
             onclick="my_modal_1.showModal()">details</button>
-          <dialog id="my_modal_1" class="modal">
+          <dialog id="my_modal_1" class="modal sm:modal-middle">
             <form method="dialog" class="modal-box flex  justify-center items-center flex-col">
               <img src="./images/fruit6.png" alt="">
               <h3 class="font-bold text-lg last:">Apples</h3>
-              <p class="py-3 px-10 text-center">Professional employees are there for you to pick the most amazing and
+              <p class="md:py-3 md:px-10 text-center">Professional employees are there for you to pick the most amazing
+                and
                 fresh fruits.
               </p>
               <span><svg width="160" height="24" viewBox="0 0 160 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -259,7 +290,7 @@
                     fill="#FBC0A8" />
                 </svg>
               </span>
-              <div class="modal-action space-x-6">
+              <div class="modal-action space-x-2 md:space-x-6">
                 <!-- if there is a button in form, it will close the modal -->
                 <button
                   class="btn bg-transparent text-[#F85559] hover:bg-transparent hover:border-red-500 border-red-500 ">Close</button>
