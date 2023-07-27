@@ -75,24 +75,59 @@
         Banner  Section Start
       ----------------------------------->
     <section>
-      <div class="carousel w-full">
+      <div class="carousel w-full rounded-lg">
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="./images/banner1.png" class="w-full" />
-          <div class="absolute  pt-24 text-center text-white md:block bg-black/70 inset-0">
-            <h5 class="text-6xl">Exotic tastes at your <br> doorstep</h5>
-            <p class="mt-5">
+          <img src="./images/banner1.png" class="md:w-full rounded-lg" />
+          <div class="absolute md:pt-24 text-center text-white md:block bg-black/70 inset-0">
+            <h5 class=" text-2xl md:text-6xl">Exotic tastes at your <br> doorstep</h5>
+            <p class="text-sm md:text-lg mt-2 md:mt-5">
               We supply highly quality organic products
             </p>
-            <button class="btn btn-primary bg-clifford border-none hover:bg-clifford mt-5">Shop Now</button>
+            <button class="btn btn-primary bg-clifford border-none hover:bg-clifford mt-2 md:mt-5">Shop Now</button>
           </div>
 
 
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#" class="btn btn-circle  bg-black border-none text-white">❮</a>
-            <a href="#" class="btn btn-circle bg-black border-none text-white">❯</a>
+            <a href="#slide3" class="btn btn-circle  bg-black border-none text-white">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-black border-none text-white">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/banner2.png" class="md:w-full" />
+          <div class="absolute md:pt-24 text-center text-white md:block bg-black/80 inset-0">
+            <h5 class=" text-2xl md:text-6xl">Exotic tastes at your <br> doorstep</h5>
+            <p class="text-sm md:text-lg mt-2 md:mt-5">
+              We supply highly quality organic products
+            </p>
+            <button class="btn btn-primary bg-clifford border-none hover:bg-clifford mt-2 md:mt-5">Shop Now</button>
+          </div>
+
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle  bg-black border-none text-white">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-black border-none text-white">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/banner3.png" class="md:w-full" />
+          <div class="absolute md:pt-24 text-center text-white md:block bg-black/80 inset-0">
+            <h5 class=" text-2xl md:text-6xl">Exotic tastes at your <br> doorstep</h5>
+            <p class="text-sm md:text-lg mt-2 md:mt-5">
+              We supply highly quality organic products
+            </p>
+            <button class="btn btn-primary bg-clifford border-none hover:bg-clifford mt-2 md:mt-5">Shop Now</button>
+          </div>
+
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle  bg-black border-none text-white">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-black border-none text-white">❯</a>
           </div>
         </div>
       </div>
+
+
+
     </section>
     <!-----------------------------------
         Banner  Section End
@@ -726,7 +761,6 @@
           ----------------------------------->
 
     <section class="md:py-14">
-
       <div>
         <h2 class="text-2xl py-4 md:text-4xl font-extrabold text-center">Why Choose Us</h2>
         <p class="text-center py-5 px-4 md:px-64">Contrary to popular belief, is not simply random text. It has roots in
@@ -825,7 +859,7 @@
         <div class="flex-1 py-4">
           <img src="./images/whychoose1.png" alt="">
         </div>
-        <div class="flex-1 py-4">
+        <div class="flex-1 py-4  pr-10 md:pr-0">
           <div class="flex justify-center items-center text-right space-x-2">
             <span>
               <h3 class="text-1xl font-extrabold py-3 ">Integrated Supplier</h3>
